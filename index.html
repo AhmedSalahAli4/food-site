@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>yummy  Site With Api Food </title>
+</head>
+
+<body>
+
+    <!--  loader screen section  -->
+    <div class="loader ">
+        <div class="tall-stack">
+        <div class="butter falling-element" ></div>
+        <div class="pancake falling-element"></div>
+        <div class="pancake falling-element"></div>
+        <div class="pancake falling-element"></div>
+        <div class="pancake falling-element"></div>
+        <div class="pancake falling-element"></div>
+        <div class="pancake falling-element"></div>
+        <div class="plate">
+            <div class="plate-bottom"></div>
+            <div class="shadow"></div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <!-- section  1  -->
+    <!-- aside  nav bar section -->
+    <div class="aside" id="aside">
+        <div class="links">
+            <a href="#" id="Search" onclick="SearchDisplay()">Search</a>
+            <a href="#" id="Categories" onclick="getCategory()">Categories</a>
+            <a href="#" id="Area" onclick="AreaApi()">Area</a>
+            <a href="#" id="Ingredients" onclick="IngredientsApi()">Ingredients</a>
+            <a href="#" id="ContactUs" onclick="getContact()">Contact Us</a>
+            <p class="mt-5">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+        <div class="nav">
+            <div class="logo mt-3">
+                <img src="img/logo.png" id="logo">
+            </div>
+            <i style="font-size:30px;cursor:pointer"
+                class="fa-solid open-close-icon fa-2x fa-align-justify text-black asidebtn"> </i>
+            <div>
+                <i class="fa-solid fa-globe ms-3"></i>
+                <i class="fa-solid fa-share-nodes ms-3 "></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  section theta display all data in continuer -->
+    <div class="container py-5">
+        <div class="row" id="cardRow">
+        </div>
+    </div>
+    <!-- end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
